@@ -1,7 +1,7 @@
 package model;
 
 public class Friend extends Contact{
-    String telNumber;
+    private String telNumber;
 
     public Friend() {
     }
@@ -11,9 +11,16 @@ public class Friend extends Contact{
         this.telNumber = telNumber;
     }
 
+    public String getTelNumber() {
+        return telNumber;
+    }
+
+    public void setTelNumber(String telNumber) {
+        this.telNumber = telNumber;
+    }
 
     @Override
     public String toString() {
-        return name+" "+telNumber;
+        return name+", Tel: "+telNumber;
     }
 }

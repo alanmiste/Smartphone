@@ -13,7 +13,7 @@ class FriendTest {
         //When
         String actual = testFriend.toString();
         //Then
-        String expected = "Flix 123456";
+        String expected = "Flix, Tel: 123456";
         Assertions.assertEquals(expected,actual);
     }
 }
