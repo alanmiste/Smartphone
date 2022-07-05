@@ -16,7 +16,7 @@ public class Smartphone implements Radio, GPS{
 
     @Override
     public String getPosition() {
-        return null;
+        return "Köln";
     }
 
     @Override
@@ -29,5 +29,13 @@ public class Smartphone implements Radio, GPS{
     public boolean stopRadio() {
         System.out.println("Radio stopped");
         return false;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 }
