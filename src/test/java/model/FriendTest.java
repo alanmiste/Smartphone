@@ -9,7 +9,7 @@ class FriendTest {
     @org.junit.jupiter.api.Test
     void testToString() {
         //Given
-        Friend testFriend = new Friend("123456","Flix");
+        Friend testFriend = new Friend("Flix","123456");
         //When
         String actual = testFriend.toString();
         //Then

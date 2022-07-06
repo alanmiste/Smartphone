@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Arrays;
+
 public class Smartphone implements Radio, GPS{
     private String model;
     private String brand;
@@ -37,5 +39,10 @@ public class Smartphone implements Radio, GPS{
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    @Override
+    public String toString() {
+        return "model: "+model+", brand: "+brand+", contacts: "+ Arrays.toString(contacts);
     }
 }
